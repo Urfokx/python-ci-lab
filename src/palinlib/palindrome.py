@@ -12,14 +12,17 @@ def is_palindrome(text: str) -> bool:
         - "abcd" is not a palindrome; should return False.
     """
     
-    queue = []
     halfway = len(text) // 2
+    queue = list(text[:halfway])
 
-    for c in text[:halfway]:
-        queue.append(c)
-    
-    for c in text[halfway + 1:]:
+    if len(text) % 2 == 0:
+        second_Half = text[halfway:]
+    else:
+        second_Half = text[halfway + 1:]
+
+    for c in second_Half:
         if c != queue.pop():
             return False
+
         
     return True
