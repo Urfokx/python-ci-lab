@@ -1,1 +1,1 @@
-# python-ci-lab
+[![Python tests](https://github.com/Urfokx/python-ci-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/Urfokx/python-ci-lab/actions/workflows/ci.yml)
